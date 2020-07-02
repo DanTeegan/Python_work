@@ -2,10 +2,22 @@
 
 from reptile import Reptile
 
-class snake(Reptile):
+class Snake(Reptile):
 
-    def __init__(self, mood, hunger, sleep, breath, hunt, lay_eggs, shed_skin, toungue_poke):
-        super().__init__(mood, hunger, sleep, breath, hunt, lay_eggs)
-        self.shed_skin = shed_skin
-        self.toungue_poke = toungue_poke
+    def __init__(self, breath, eat, sleep, move, vision, hunt, use_venom, use_tounge_to_smell):
+        super().__init__(breath, eat, sleep, move, vision, hunt, use_venom)
+
+        self.use_tounge_to_smell = use_tounge_to_smell
+
+    def smell(self):
+        self.use_tounge_to_smell = "SsSsSSsS"
+
+snake = Snake(breath = True, eat = True, sleep = True,
+                move = True, vision = True, hunt = True,
+                use_venom = "Sprays venom", use_tounge_to_smell = "SsSsSSsS")
+
+print(snake.tired())
+
+
+
 
