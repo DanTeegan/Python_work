@@ -1,5 +1,5 @@
 
-
+# Here we are importing the Reptile class from the reptile file
 from reptile import Reptile
 
 class Snake(Reptile):
@@ -11,6 +11,7 @@ class Snake(Reptile):
 
     def smell(self):
         self.use_tounge_to_smell = "SsSsSSsS"
+        print("SsSsSSsS")
 
 snake = Snake(breath = True, eat = True, sleep = True,
                 move = True, vision = True, hunt = True,

@@ -18,6 +18,7 @@ class Animal:
 
     def tired(self):
         self.sleep = "ZzZzZzZ"
+        print("ZzZzZzZ")
 
     def sight(self):
         self.vision = True
@@ -26,3 +27,4 @@ class Animal:
 animal = Animal(breath = True, eat = True, sleep = "ZzZzZzZ",
                 move = True, vision = True)
 
+print(animal.tired())

@@ -17,6 +17,7 @@ class Reptile(Animal):
 
     def threat(self):
         self.use_venom = "Sprays venom"
+        print("Sprays venom")
 
 reptile = Reptile(breath = True, eat = True, sleep = True,
                 move = True, vision = True, hunt = True,
