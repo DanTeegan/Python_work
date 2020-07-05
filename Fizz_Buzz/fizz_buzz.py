@@ -4,8 +4,6 @@
 # If divisible by 5 % 5 = 0
 
 
-
-
 class fizz_buzz:
 
     def fizz_buzz_finder(self):
@@ -19,7 +17,6 @@ class fizz_buzz:
                 print("Fizz-Buzz")
             else:
                 print(number)
-
 
 fizzbuzz1 = fizz_buzz()
 fizzbuzz1.fizz_buzz_finder()

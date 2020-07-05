@@ -4,6 +4,15 @@ import operators
 # Here we are creating a class called calc
 class calc:
 
+    print("Please select what you want to do:")
+    print("1 - Calculator")
+    print("2 - Area of triangle")
+    print("3 - Inches to CM converter")
+
+    choice = int(input("Please choose what you want to do: "))
+
+
+
     # Here we are getting the user input for an integer
     num1 = int(input("Please enter an integer: "))
 
@@ -16,6 +25,7 @@ class calc:
     print("2 - Subtract")
     print("3 - Multiply")
     print("4 - Divide")
+    print("5 - Remainder")
 
     # Here the user is required to select an operator based on the previous options
     operator_choice = int(input("Please enter the operator you would like to use: "))
@@ -29,6 +39,10 @@ class calc:
         print(operators.multiply_values(num1, num2))
     elif operator_choice == 4:
         print(operators.divide_values(num1, num2))
+    elif operator_choice == 5:
+
+
+
     else:
         print("Error")
 
